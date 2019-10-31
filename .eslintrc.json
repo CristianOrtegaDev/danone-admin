@@ -1,0 +1,34 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jest/recommended"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.0"
+    }
+  },
+  "rules": {
+    "no-extra-semi": 0,
+    "react/prop-types": "ignore",
+    "max-len": [
+      "error",
+      100,
+      {
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ]
+  }
+}
